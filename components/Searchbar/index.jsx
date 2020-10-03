@@ -19,7 +19,7 @@ const Search = () => {
         <div className="dropdownicon-container">
           <DropdownIcon
             className="dropDownIcon"
-            color="red"
+            color="#FF9893"
             height="20px"
             width="20px"
           />
