@@ -1,30 +1,30 @@
 import react from "react";
 import { HeaderStyles } from "./styles";
-import { FlexibleDiv, GridableDiv } from "../Box/styles";
+import { Flex, Grid } from "../Box/styles";
 import Searchbar from "../Searchbar";
-import { B } from "../FontSize/styles";
+import { Bold } from "../FontSize/styles";
 
 const Search = () => {
   return (
     <HeaderStyles>
-      <FlexibleDiv
+      <Flex
         justifyContent="flex-start"
         flexWrap="nowrap"
         className="header-wrap"
         width="88%"
       >
-        <B color="#EC2C22" bold className="header-logo">
+        <Bold color="#EC2C22" bold className="header-logo">
           LOGO
-        </B>
+        </Bold>
 
         <Searchbar className="searchbar-container" />
 
         <div className="header-links-container">
-          <GridableDiv className="header-menu" gap="3px">
+          <Grid className="header-menu" gap="3px">
             <div></div>
             <div></div>
             <div></div>
-          </GridableDiv>
+          </Grid>
           <ul className="header-links">
             <li>HOME</li>
             <li>MORE</li>
@@ -32,7 +32,7 @@ const Search = () => {
             <li>FOLLOW</li>
           </ul>
         </div>
-      </FlexibleDiv>
+      </Flex>
     </HeaderStyles>
   );
   ``;
